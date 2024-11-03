@@ -58,3 +58,15 @@ local python = Terminal:new({ cmd = "python3", hidden = true })
 function _PYTHON_TOGGLE()
  python:toggle()
 end
+
+local pwsh = Terminal:new({ cmd = "pwsh", hidden = true })
+
+function _PWSH_TOGGLE()
+ pwsh:toggle()
+end
+--[[
+local pwshvs = Terminal:new({ cmd = "C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe", hidden = true })
+
+function _PWSHVS_TOGGLE()
+ pwshvs:toggle()
+end]]--

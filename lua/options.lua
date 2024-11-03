@@ -14,10 +14,11 @@ opt.splitright = true -- Put new windows right of current
 opt.tabstop = 2 -- Number of spaces tabs count for
 opt.undofile = true
 opt.wildmode = "longest:full,full" -- Command-line completion mode
-opt.termguicolors = false -- True color support
+opt.termguicolors = true -- True color support
+opt.expandtab = false -- Use spaces instead of tabs
 vim.o.background = "light"
 vim.cmd('language en_US') -- Set Neovim language to English
-vim.cmd('colorscheme solarized')
+vim.cmd('colorscheme kanagawa-lotus')
 
 
 

@@ -11,7 +11,7 @@ return {
     'nvim-tree/nvim-web-devicons'
     },
   },
-	
+
 	-- Colorscheme
 	{
 		"sainnhe/everforest",
@@ -28,6 +28,31 @@ return {
 	{
 		"catppuccin/nvim",
 	},
+	{
+		"rebelot/kanagawa.nvim",
+	},
+  {
+    "EdenEast/nightfox.nvim",
+  },
+  {
+    "ellisonleao/gruvbox.nvim",
+  },
+  {
+    "rose-pine/neovim",
+  },
+  {
+    "shaunsingh/nord.nvim",
+  },
+  {
+    "loctvl842/monokai-pro.nvim",
+  },
+  {
+    "tanvirtin/monokai.nvim",
+  },
+	{
+		"cocopon/iceberg.vim",
+	},
+
 	--[[ Hop (Better Navigation)
     {
         "phaazon/hop.nvim",
@@ -41,7 +66,6 @@ return {
             'nvim-tree/nvim-web-devicons'
         },
     },
-	
 	-- Language Support
 	-- Added this plugin.
 	{

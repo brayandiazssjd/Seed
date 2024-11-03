@@ -90,6 +90,8 @@ local mappings = {
         n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" }, -- NodeJS Terminal
         p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" }, -- Python Terminal
         f = { "<cmd>ToggleTerm direction=float<cr>", "Float" }, -- Floating Terminal
+				s = { "<cmd>lua _PWSH_TOGGLE()<cr>", "Powershell" }, -- Powershell Terminal
+				v = { "<cmd>lua _PWSHVS_TOGGLE()<cr>", "Powershell VS" }, -- Powershell Terminal
 
         -- Play with size according to your needs.
         h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" }, -- Horizontal Terminal,
