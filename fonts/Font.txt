@@ -1,0 +1,9 @@
+Reglas para escoger algunas fuentes que me pueden gustar:
+Para programar:
+- La a debe ser de imprenta
+- Las tíldes deben ser visibles
+- Los underscore y hyphen deben ser distinguibles
+- Asterisco de 6 o 5 puntas
+- Parentesis y llaves distinguibles
+- Cero distinguible de la de la vocal 'o'
+Para otros propósitos

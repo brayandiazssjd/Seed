@@ -1,0 +1,22 @@
+[
+    {
+        "backup-directory": "./BackUp/nvim",
+        "origin": [
+            "C:users/user/appdata/local/nvim"        
+        ]
+    },
+    {
+        "backup-directory": "./BackUp/SublimeText",
+        "origin": [
+            "C:Users/braya/AppData/Roaming/Sublime Text/Packages/User/Preferences.sublime-settings",
+            "C:Users/braya/AppData/Roaming/Sublime Text/Packages/User/Default (Windows).sublime-keymap",
+            "C:Users/braya/AppData/Roaming/Sublime Text/Packages/User/Package Control.sublime-settings"
+        ]
+    },
+    {
+        "backup-directory": "./BuckUp/WindowsTerminal",
+        "origin": [
+            "C:Users/braya/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState"
+        ]
+    }
+]
