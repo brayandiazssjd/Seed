@@ -1,43 +1,31 @@
-# This script install the applications listed in 'internetApps.json' and 'wingetApps.json'
+# This script install the applications listed in 'internet-apps.json' and 'winget-apps.json'
 
 
-$wingetFile = 'wingetApps.json'
-$internetFile = 'internetApps.json'
-$wingetApps = $null
-$internetApps = $null
+Import-Module Microsoft.WinGet.Client
 
-try {
-    $wingetApps = Get-Content -Raw $wingetFile | ConvertFrom-Json 
-}
-catch {
-    Write-Host "Failed to get the list of `'$wingetFile`' Exception: $_"
-}
+
+$WingetFile = 'winget-apps.json'
+$WingetApps = $null
 
 try {
-    $internetApps = Get-Content $internetFile -Raw | ConvertFrom-Json 
+    $WingetApps = Get-Content -Raw $WingetFile | ConvertFrom-Json
+        | ForEach-Object { Find-WinGetPackage -Id $_ -MatchOption Equals }
 }
-catch {
-    Write-Error "Failed to get the list of `'$internetFile`' Exception: $_"
-}
+catch { Write-Error "Failed to get the list of `'$WingetFile`' Exception: $_" }
 
-Write-Host 'This apps will be installed:'
-wingetApps | ForEach-Object -Process { Write-Host $_.name }
-internetApps | ForEach-Object -Process { Write-Host $_.name }
+Write-Host "`nThis apps will be installed:`n"
+ForEach ($App in $WingetApps) { Write-Host "$App.Name $App.Version" }
 
-Write-Host 'Starting apps installation...'
+Write-Host '`nStarting apps installation...`n'
 
-ForEach ($id in $wingetApps) {
+ForEach ($App in $wingetApps) {
     try {
-        & winget install $id
-        Write-Host "$id successfully installed"
+        Install-WinGetPackage -Id $App.Id
+        write-host "$($App.Name) successfully installed"
     }
     catch {
-        Write-Error "Failed to install $id, with error: $_"
+        write-error "Failed to install $($App.Name) with error: $_"
     }    
 }
 
-ForEach ($app in $internetApps) {
-     & Invoke-WebRequest -Uri $app.uri -OutFile 
-}
-
-Write-Host 'Finished applications installation.'
+Write-Host 'Finished applications installation :3' -ForegroundColor Green

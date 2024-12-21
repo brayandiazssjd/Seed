@@ -1,0 +1,11 @@
+@startuml
+
+class App {
+    name: string
+    source: string
+}
+
+class Wapp {
+   
+
+@enduml

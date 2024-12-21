@@ -3,18 +3,21 @@
         "bin": "NetBeans-Intaller.exe",
         "name": "NetBeans",
         "sha256": ""
-        "uri": "https://archive.apache.org/dist/netbeans/netbeans-installers/22/Apache-NetBeans-22-bin-windows-x64.exe"
+        "uri": "https://archive.apache.org/dist/netbeans/netbeans-installers/22/Apache-NetBeans-22-bin-windows-x64.exe",
+        "version": "22"
     },
     {
         "bin": "Eclipse-Installer.exe",
         "name": "Eclipse Java",
         "sha256": "",
-        "uri": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2024-09/R/eclipse-inst-jre-win64.exe&mirror_id=576"
+        "uri": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2024-09/R/eclipse-inst-jre-win64.exe&mirror_id=576",
+        "version": "2024-4"
     },
     {
         "bin": "Neovim-Installer.msi",
         "name": "Neovim",
         "sha256": "e3862da16841af4bd34d333c94aa2d8fbc551336e3041f55f858f73437f4c909e02b3cb1acc049261e92982a588db2d02b4bece15b4a1f99597e566d410fea02",
-        "uri": "https://github.com/neovim/neovim/releases/download/v0.9.4/nvim-win64.msi"
+        "uri": "https://github.com/neovim/neovim/releases/download/v0.9.4/nvim-win64.msi",
+        "version": "9.2.0"
     }
 ]

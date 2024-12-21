@@ -5,11 +5,10 @@ $source = 'https://github.com/microsoft/winget-cli/releases/lastest/download/Mic
 $outFile = 'AppInstaller.msixbundle'
 Write-Host('Downloading Winget installer...')
 try {
-    Invoke-WebRequest -Uri $source -OutFile $outFile
-    Write-Host("Follow installation and then come back...")
-    & "./$outFile"
+    Invoke-WebRequest -Uri $source -OutFile $outFile | Invoke-Expression
+    Write-Host "Follow installation and then come back..."
     Write-Host('Winget successfully installed!')
 }
 catch {
-    Write-Host('Warning, Winget installation failed')
+    Write-Error 'Warning, Winget installation failed'
 }
